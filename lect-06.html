@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Conditional Rendering</h2>
+
+    <script>
+        // 1. if/else
+
+        let a = 5;
+        let b = 7;
+
+        if (a === '5' && b === 7) {
+            console.log('true');
+        }
+        else {
+            console.log('false');
+        }
+
+        // task: even/odd prime num
+
+        // else if ladder
+        if (a == 3 && b == 7) {
+            console.log('a is equal to 3');
+        }
+        else if (a == 7 && b == 7) {
+            console.log('a is equal to 7');
+        }
+        else if (a == 6) {
+            console.log('a equals 6');
+        }
+        else {
+            console.log('none of the value is matched with a');
+        }
+        // task: find weekend in all week days.
+
+        // ternary operator (?)
+
+        let z = 4;
+
+        console.log(z == 4 ? 'value is correct' : 'value is incorrect');
+
+        // if(z==4)
+        // {
+        //     console.log('value is correct');
+        // }
+        // else
+        // {
+        //     console.log('value is incorrect');
+        // }
+
+        // switch statement
+
+        let weekend = 'Sunday';
+
+        switch (weekend) {
+
+            // default:
+            //     console.log('fail');
+            //     break; 
+
+            case 'Monday':
+                console.log('week day');
+                break;
+
+            case 'Tuesday':
+                console.log('week day');
+                break;
+
+            case 'Saturday':
+                console.log('week day');
+                break;
+
+            default:
+                console.log('fail');
+                break;
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Methods in JS</h1>
+
+    <script>
+
+        // length
+
+        let arr = ['pink', 'green', 'blue', 'black', 'cyan'];
+        console.log(arr);
+        console.log(arr.length);
+
+        let str = '      pinkgreenblueblackcy ,an    ';
+        // console.log(str);
+        // console.log(str.length);
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+        // console.log(str.trim());
+        // console.log(str.trimStart());
+        console.log(str.trimEnd());
+
+        let new_str = 'ABCDEFGHIJ';
+        // console.log(new_str.length);
+        console.log(new_str.slice(0,3));
+
+        // substring ()1 parameter
+        let sub_string = 'ABCDEFGHIJ';
+        console.log(sub_string.substring(3));
+
+        // substring() 2 parameters
+        console.log(sub_string.substring(2,5));
+
+        // substr()
+        console.log(sub_string.substr(2,7));
+
+        // split()
+
+        let split_str = 'Hello new World';
+        console.log(split_str.split('', 6));
+
+
+    </script>
+</body>
+</html>

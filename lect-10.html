@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>String Search Methods</h2>
+
+
+    <script>
+
+        // indexOf() -> cannot use regex -> case sensitive
+        let string = "Please locate where 'locate' occurs!";
+        console.log(string.indexOf('locate'));
+
+        // lastIndexOf()
+        console.log(string.lastIndexOf('locate'));
+
+        // search()-> can use regular expressions -> case sensitive
+        console.log(string.search(/locate/i));
+
+        // i -> ignore case sensitive
+        // g -> global search
+
+        // match() -> case sensitive
+        let new_string = "The rain in SPAIN stays mainly in the plain!"
+        console.log(new_string.match(/ain/ig));
+
+        // matchAll() -> case sensitive
+        let new_match = [...new_string.matchAll(/ain/ig)];
+        console.log(new_match);
+
+        // includes() -> returns boolean
+
+        // startsWith() -> returns boolean
+        console.log(new_string.startsWith('The'));
+
+        // endsWith() -> returns boolean
+        console.log(new_string.endsWith('plain'));
+
+    </script>
+    
+</body>
+</html>
